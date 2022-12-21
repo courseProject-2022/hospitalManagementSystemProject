@@ -1,3 +1,50 @@
+<?php 
+
+session_start();
+
+include("include/connection.php"); 
+
+if (isset($_POST['login'])) {
+	
+	$username = $_POST['uname'];
+	$password = $_POST['pass'];
+
+	$error = array();
+
+	if(empty($username)){
+		$error['admin'] = "Enter Username";
+		
+	}
+	else if(empty($password)){
+		$error['admin'] = "Enter Password";	
+	}
+	if(count($error)==0){
+
+		$query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
+		$result = mysqli_query($connect,$query);
+
+
+		if(mysqli_num_rows($result) == 1 ) {
+
+			echo "<script>alert('You have login as an Admin')</script>";
+
+			$_SESSION['admin'] = $username;
+
+			header("Location:admin/index.php");
+			exit();
+		}
+
+		else{
+
+			echo "<script>alert('Invalid Username or Password')</script>";
+		}
+	}
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
