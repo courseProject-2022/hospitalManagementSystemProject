@@ -20,7 +20,7 @@
         <div style="margin-left: auto" class="mr-auto"></div>
 
         <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link text-white">Admin</a></li>
+            <li class="nav-item"><a href="adminlogin.php" class="nav-link text-white">Admin</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white">Doctor</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white">Nurse</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white">Patient</a></li>
