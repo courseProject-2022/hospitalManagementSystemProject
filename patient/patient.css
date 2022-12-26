@@ -1,0 +1,75 @@
+.col-md-2{
+
+    margin-left: -30px;
+  }
+  
+  .my-3 {
+  
+      display: block;
+      font-size: 1.5em;
+      margin-top: 0.67em;
+      margin-bottom: 0.67em;
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: bold;
+  }
+  .col-md-3 {
+  
+      height: 150px;
+  
+  }
+  
+  .fa-solid{
+  
+      color: white;
+      border-radius: 0.2em;
+      padding: 0.2em;
+      
+  }
+  
+  input[type=submit] {
+      background-color: red;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid red;
+      border-radius: 4px;
+      
+    }
+    form {
+  
+      width  : 500px;
+      height : 300px;
+      margin-bottom: 200px;
+      box-sizing: border-box;
+     
+    }
+   .patientMain {
+  
+      background-image: url("../images/dcpt.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+    }
+  
+  #noP {
+  
+    background-color:rgb(252, 107, 88);
+    font-size:larger;
+    font-style: oblique;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: inherit;
+    white-space: nowrap; 
+  
+  }
